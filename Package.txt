@@ -1,0 +1,26 @@
+from sklearn.datasets import fetch_20newsgroups
+from sklearn.model_selection import train_test_split
+from normalization import normalize_corpus
+from features import bow_extractor, tfidf_extractor
+from features import averaged_word_vectorizer
+from features import tfidf_weighted_averaged_word_vectorizer
+import nltk
+from gensim import models
+import gensim
+from sklearn import metrics
+import numpy as np
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.linear_model import SGDClassifier
+import pandas as pd
+
+from contractions import CONTRACTION_MAP
+import re
+import nltk
+import string
+from nltk.stem import WordNetLemmatizer
+
+from contractions import CONTRACTION_MAP
+import re
+import nltk
+import string
+from nltk.stem import WordNetLemmatizer
